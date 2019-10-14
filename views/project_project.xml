@@ -22,7 +22,7 @@
         <field name="inherit_id" ref="project.view_project_project_filter"/>
         <field name="arch" type="xml">
             <filter name="inactive" position="after">
-                <filter string="Actives" name="actives" domain="[('active2','=',True)]"/>            
+                <filter string="Inactives" name="actives" domain="[('active2','=',True)]"/>
             </filter>
         </field>
     </record>
