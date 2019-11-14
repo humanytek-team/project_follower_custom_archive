@@ -16,3 +16,4 @@ class ProjectProject(models.Model):
                 r.sudo().message_follower_ids.unlink()
                 for task in r.task_ids:
                     task.sudo().message_follower_ids.unlink()
+                    task.active2 = False

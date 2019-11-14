@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_task_archive_form2" model="ir.ui.view">
+        <field name="name">project.task.archive.form</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <button name="toggle_active" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </button>
+            <button name="toggle_active" position="after">
+                <button name="toggle_active2" type="object" class="oe_stat_button" icon="fa-archive">
+                    <field name="active2" widget="boolean_button" options="{&quot;terminology&quot;: &quot;archive&quot;}"/>
+                </button>
+            </button>
+        </field>
+    </record>
+
+    <record id="view_task_archive_search_form" model="ir.ui.view">
+        <field name="name">project.task.archive.search.form</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search_form"/>
+        <field name="arch" type="xml">
+            <filter name="inactive" position="after">
+                <filter string="Actives" name="actives" domain="[('active2','=',True)]"/>
+                <filter string="Inactives" name="inactives" domain="[('active2','=',False)]"/>
+            </filter>
+        </field>
+    </record>
+</odoo>

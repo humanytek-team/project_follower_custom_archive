@@ -20,7 +20,7 @@
 
 {
     'name': 'Project Follower Custom Archive',
-    'version': '1.1.0',
+    'version': '1.2.0',
     'author': 'Humanytek',
     'website': 'http://humanytek.com',
     'depends': [
@@ -28,5 +28,6 @@
     ],
     'data': [
         'views/project_project.xml',
+        'views/project_task.xml',
     ]
 }
