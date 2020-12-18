@@ -19,15 +19,15 @@
 ##############################################################################
 
 {
-    'name': 'Project Follower Custom Archive',
-    'version': '1.2.0',
-    'author': 'Humanytek',
-    'website': 'http://humanytek.com',
-    'depends': [
-        'project',
+    "name": "Project Follower Custom Archive",
+    "version": "1.2.0",
+    "author": "Humanytek",
+    "website": "http://humanytek.com",
+    "depends": [
+        "project",
     ],
-    'data': [
-        'views/project_project.xml',
-        'views/project_task.xml',
-    ]
+    "data": [
+        "views/project_project.xml",
+        "views/project_task.xml",
+    ],
 }
