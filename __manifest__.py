@@ -30,4 +30,5 @@
         "views/project_project.xml",
         "views/project_task.xml",
     ],
+    "license": "AGPL-3",
 }
